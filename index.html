@@ -59,9 +59,9 @@
     const VOICE_ID = "21m00Tcm4TlvDq8ikWAM"; 
 
     const genAI = new GoogleGenerativeAI(GEMINI_KEY);
-    const model = genAI.getGenerativeModel({ 
-        model: "gemini-1.5-flash-latest",
-        systemInstruction: "You are Sarah, the AI Secretary for Boss. Be witty, efficient, and address him as Boss. You manage his tasks, including B.Tech counseling and design projects."
+      const model = genAI.getGenerativeModel({ 
+        model: "gemini-pro",
+        systemInstruction: "You are Sarah..." // Note: Older gemini-pro sometimes ignores systemInstructions, but it will fix the 404.
     });
 
     // --- THREE.JS SPHERE ---
